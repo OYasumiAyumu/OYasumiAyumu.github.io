@@ -2,13 +2,14 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>Present</title>
+    <title>安梦梦の猫窝</title>
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="static/css/loading.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://oyasumiayumu.github.io/static/img/favicon-32x32.png">
 </head>
 <body class="locked">
     <div class="self-avatar flex-center">
@@ -25,7 +26,7 @@
         </div>
         <div class="loading-text text-center">
             <p class="loading-pre">Loading...</p>
-            <p class="avatar-name">Present</p>
+            <p class="avatar-name">安梦梦</p>
             <p class="dokidoki-text"></p>
         </div>
     </div>
@@ -37,28 +38,29 @@
                 <div class="self-content links-container flex-center text-center">
                     <a href="#" class="link-item">
                         <div class="link-icon"><i class="fa fa-home"></i></div>
-                        <div>博客</div>
+                        <div>Home</div>
                     </a>
-                    <a href="#" class="link-item">
-                        <div class="link-icon"><i class="fa fa-play-circle"></i></div>
+                    <a href="https://space.bilibili.com/11057151" class="link-item">
+                        <div class="link-icon"><i class="fa fa-tv"></i></div>
                         <div>Bilibili</div>
                     </a>
-                    <a href="#" class="link-item">
-                        <div class="link-icon"><i class="fa fa-qq"></i></div>
-                        <div>QQ</div>
+                    <a href="https://live.bilibili.com/3694811" class="link-item">
+                        <div class="link-icon"><i class="fa fa-play-circle"></i></div>
+                        <div>BiliLive</div>
                     </a>
-                    <a href="#" class="link-item">
-                        <div class="link-icon"><i class="fa fa-telegram"></i></div>
-                        <div>Telegram</div>
+                    <a href="https://twitter.com/AndyFubuki" class="link-item">
+                        <div class="link-icon"><i class="fa fa-twitter"></i></div>
+                        <div>Twitter</div>
                     </a>
-                    <a href="#" class="link-item">
-                        <div class="link-icon"><i class="fa fa-steam"></i></div>
-                        <div>Steam</div>
+                    <a href="https://marshmallow-qa.com/andyfubuki" class="link-item">
+                        <div class="link-icon"><i class="fa fa-inbox"></i></div>
+                        <div>Marshmallow</div>
                     </a>
-                    <a href="#" class="link-item">
-                        <div class="link-icon"><i class="fa fa-github"></i></div>
-                        <div>Github</div>
+                    <a href="https://www.twitch.tv/andydream" class="link-item">
+                        <div class="link-icon"><i class="fa fa-twitch"></i></div>
+                        <div>Twitch</div>
                     </a>
+                    
                 </div>
                 <div class="self-content article-container">
                     <div class="article-content"></div>
@@ -75,7 +77,7 @@
                 </div>
                 <div class="self-content">
                     <div class="info-container">
-                        This is a simple homepage theme by Zapic.
+                        建设中！
                     </div>
 
                 </div>
@@ -83,20 +85,20 @@
             <div class="self-switcher">
                 <div class="switcher-btn text-center" id="switcher-btn-1">
                     <div class="btn-icon"><i class="fa fa-link"></i></div>
-                    <div class="btn-text">链接</div>
+                    <div class="btn-text">Links</div>
                 </div>
                 <div class="switcher-btn text-center" id="switcher-btn-2">
                     <div class="btn-icon"><i class="fa fa-book"></i></div>
-                    <div class="btn-text">文章</div>
+                    <div class="btn-text">Articles</div>
                 </div>
                 <div class="switcher-btn text-center" id="switcher-btn-3">
                     <div class="btn-icon"><i class="fa fa-info-circle"></i></div>
-                    <div class="btn-text">关于</div>
+                    <div class="btn-text">About</div>
                 </div>
                 <div class="btn-select-indicator"></div>
             </div>
         </div>
-        <div class="footer-container text-center">© 2020 By <a href="#">Present</a></div>
+        <div class="footer-container text-center">© 2023 By <a href="#">OYasumiAyumu</a></div>
     </div>
 </body>
 
@@ -111,19 +113,28 @@
         var feedType = "json";
         var feedPath = "feed.php";
         var bgArr = [{
-            "url": "static/img/background-1.jpg",
-            "thumb": "static/img/background-1-thumb.jpg"
+            "url": "static/img/background-1.png",
+            "thumb": "static/img/background-1-thumb.png"
         }, {
-            "url": "static/img/background-2.jpg",
-            "thumb": "static/img/background-2-thumb.jpg"
-        }];
+            "url": "static/img/background-2.png",
+            "thumb": "static/img/background-2-thumb.png"
+        }, {
+            "url": "static/img/background-3.jpg",
+            "thumb": "static/img/background-3-thumb.jpg"
+        }, {
+            "url": "static/img/background-4.png",
+            "thumb": "static/img/background-4-thumb.png"
+        }, ];
         var senArr = [
             {
-                ch: ["This is an example."],
-                py: ["This is an example."],
+                ch: ["你", "所", "热爱的", "，", "就是", "你的", "生活", "。"],
+                py: ["ni", "suo", "re'ai'de", "，", "jiu'shi", "ni'de", "sheng'huo", "。"],
             }, {
-                ch: ["这是", "一个", "示例", "."],
-                py: ["zhe'shi", "yi'ge", "shi'li", "."],
+                ch: ["喊", "all", "不", "in", "，", "叫", "寄", "不", "灵", "。"],
+                py: ["han", "all", "bu", "in", "，", "jiao", "ji", "bu", "ling", "。"],
+            }, {
+                ch: ["你", "说得对", "，", "但是", "……"],
+                py: ["ni", "shuo'de'dui", "，", "but", "……"],
             }
         ];
 

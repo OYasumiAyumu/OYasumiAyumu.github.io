@@ -86,7 +86,7 @@ body.locked, .content-container, .self-wrapper, .article-title {
 }
 
 .article-title:hover {
-    color: #fb7299;
+    color: #80B0DB;
 }
 
 .background-layer {
@@ -225,7 +225,7 @@ body.locked, .content-container, .self-wrapper, .article-title {
 }
 
 .footer-container a {
-    color: #fb7299;
+    color: #80B0DB;
 }
 
 .info-container {
@@ -236,7 +236,7 @@ body.locked, .content-container, .self-wrapper, .article-title {
 .link-icon {
     width: 100%;
     height: 64px;
-    color: #fb7299;
+    color: #80B0DB;
     padding: 8px 0;
     box-sizing: border-box;
 }
@@ -326,7 +326,7 @@ body.locked, .content-container, .self-wrapper, .article-title {
     width: 100%;
     height: 64px;
     position: absolute;
-    background-color: #fb7299;
+    background-color: #80B0DB;
 }
 
 .self-wrapper {
@@ -382,7 +382,7 @@ body.locked, .content-container, .self-wrapper, .article-title {
 
 @keyframes spinner-fill {
     0% {
-        stroke: #FB7299;
+        stroke: #80B0DB;
         stroke-width: 8;
         transform: scale(1);
         stroke-dasharray: 351;

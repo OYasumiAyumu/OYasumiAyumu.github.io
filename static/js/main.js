@@ -221,3 +221,4 @@ function Init(feedType, feedPath, bgArr, senArr) {
     });
 }
 console.log("\n %c Present %c By Zapic \n\n", "color: #fff; background: #fb7299; padding:5px 0;", "background: #efefef; padding:5px 0;");
+console.log("\n %c Modified %c By OYasumiAyumu \n\n", "color: #fff; background: #80B0DB; padding:5px 0;", "background: #efefef; padding:5px 0;");
