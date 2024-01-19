@@ -40,27 +40,34 @@
                         <div class="link-icon"><i class="fa fa-home"></i></div>
                         <div>Home</div>
                     </a>
-                    <a href="https://space.bilibili.com/11057151" class="link-item">
+                    <a href="https://space.bilibili.com/11057151" class="link-item" target="_blank">
                         <div class="link-icon"><i class="fa fa-tv"></i></div>
                         <div>Bilibili</div>
                     </a>
-                    <a href="https://live.bilibili.com/3694811" class="link-item">
+                    <a href="https://live.bilibili.com/3694811" class="link-item" target="_blank">
                         <div class="link-icon"><i class="fa fa-play-circle"></i></div>
                         <div>BiliLive</div>
                     </a>
-                    <a href="https://twitter.com/AndyFubuki" class="link-item">
+                    <a href="https://twitter.com/AndyFubuki" class="link-item" target="_blank">
                         <div class="link-icon"><i class="fa fa-twitter"></i></div>
                         <div>Twitter</div>
                     </a>
-                    <a href="https://marshmallow-qa.com/andyfubuki" class="link-item">
-                        <div class="link-icon"><i class="fa fa-inbox"></i></div>
-                        <div>Marshmallow</div>
-                    </a>
-                    <a href="https://www.twitch.tv/andydream" class="link-item">
+                    <a href="https://www.twitch.tv/andydream" class="link-item" target="_blank">
                         <div class="link-icon"><i class="fa fa-twitch"></i></div>
                         <div>Twitch</div>
                     </a>
-                    
+                    <a href="https://afdian.net/a/andydreamer" class="link-item" target="_blank">
+                        <div class="link-icon"><i class="fa fa-heart"></i></div>
+                        <div>Afdian</div>
+                    </a>
+                    <a href="https://candy.vupgo.com/11057151" class="link-item" target="_blank">
+                        <div class="link-icon"><i class="fa fa-inbox"></i></div>
+                        <div>Marshmallow</div>
+                    </a>
+                    <a href="https://marshmallow-qa.com/andyfubuki" class="link-item" target="_blank">
+                        <div class="link-icon"><i class="fa fa-magic"></i></div>
+                        <div>Marshmallow</div>
+                    </a>
                 </div>
                 <div class="self-content article-container">
                     <div class="article-content"></div>
@@ -77,9 +84,8 @@
                 </div>
                 <div class="self-content">
                     <div class="info-container">
-                        建设中！
+                        <a class="twitter-timeline" href="https://twitter.com/AndyFubuki?ref_src=twsrc%5Etfw">Tweets by AndyFubuki</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
-
                 </div>
             </div>
             <div class="self-switcher">
@@ -98,7 +104,7 @@
                 <div class="btn-select-indicator"></div>
             </div>
         </div>
-        <div class="footer-container text-center">© 2023 By <a href="#">OYasumiAyumu</a></div>
+        <div class="footer-container text-center">© 2024 By <a href="#">OYasumiAyumu</a></div>
     </div>
 </body>
 
@@ -113,28 +119,43 @@
         var feedType = "json";
         var feedPath = "feed.php";
         var bgArr = [{
-            "url": "static/img/background-1.png",
-            "thumb": "static/img/background-1-thumb.png"
+            "url": "static/img/background-1.jpg",
+            "thumb": "static/img/background-1-thumb.jpg"
         }, {
-            "url": "static/img/background-2.png",
-            "thumb": "static/img/background-2-thumb.png"
+            "url": "static/img/background-2.jpg",
+            "thumb": "static/img/background-2-thumb.jpg"
         }, {
             "url": "static/img/background-3.jpg",
             "thumb": "static/img/background-3-thumb.jpg"
         }, {
-            "url": "static/img/background-4.png",
-            "thumb": "static/img/background-4-thumb.png"
-        }, ];
+            "url": "static/img/background-4.jpg",
+            "thumb": "static/img/background-4-thumb.jpg"
+        }, {
+            "url": "static/img/background-5.jpg",
+            "thumb": "static/img/background-5-thumb.jpg"
+        }, {
+            "url": "static/img/background-6.jpg",
+            "thumb": "static/img/background-6-thumb.jpg"
+        }, {
+            "url": "static/img/background-7.jpg",
+            "thumb": "static/img/background-7-thumb.jpg"
+        } ];
         var senArr = [
             {
                 ch: ["你", "所", "热爱的", "，", "就是", "你的", "生活", "。"],
-                py: ["ni", "suo", "re'ai'de", "，", "jiu'shi", "ni'de", "sheng'huo", "。"],
+                py: ["ni", "suo", "re'ai'de", "，", "jiu'shi", "your", "sheng'huo", "。"],
             }, {
                 ch: ["喊", "all", "不", "in", "，", "叫", "寄", "不", "灵", "。"],
                 py: ["han", "all", "bu", "in", "，", "jiao", "ji", "bu", "ling", "。"],
             }, {
                 ch: ["你", "说得对", "，", "但是", "……"],
                 py: ["ni", "shuo'de'dui", "，", "but", "……"],
+            }, {
+                ch: ["关注", "安梦梦", "谢谢", "喵", "，", "B站", "关注", "安梦梦", "谢谢", "喵", "~"],
+                py: ["guan'zhu", "Ayumu", "arigatou", "meow", "，", "Bilibili", "follow", "Ayumu", "arigatoogozaimasu", "meow", "~"],
+            }, {
+                ch: ["大家好呀", "，", "我是", "安梦梦", "，", "今天", "来点", "大家", "想看的", "东西", "。"],
+                py: ["Hello", "，","I'm", "Ayumu", "，", "jin'tian", "lai'dian", "da'jia", "xiang'kan'de", "dong'xi", "。"],
             }
         ];
 

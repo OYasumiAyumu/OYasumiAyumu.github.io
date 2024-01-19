@@ -136,7 +136,7 @@ body.locked, .content-container, .self-wrapper, .article-title {
 .content-container {
     width: 320px;
     height: 400px;
-    background: white;
+    background-color: white;
     position: relative;
     border-radius: 3px;
     box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, .5);
@@ -231,6 +231,12 @@ body.locked, .content-container, .self-wrapper, .article-title {
 .info-container {
     height: 100%;
     white-space: normal;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.info-container::-webkit-scrollbar {
+    width: 0;
 }
 
 .link-icon {
