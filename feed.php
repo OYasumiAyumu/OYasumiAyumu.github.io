@@ -1,5 +1,5 @@
 <?php
-$feed_url = "https://andyfubuki.blogspot.com/feeds/posts/default?alt=rss";
+$feed_url = "";
 $data = simplexml_load_file($feed_url)->channel->item;
 $resp = [
     "status" => 0,

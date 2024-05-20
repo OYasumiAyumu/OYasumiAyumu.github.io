@@ -14,7 +14,7 @@ NodeList.prototype.forEach = NodeList.prototype.forEach || function (callback) {
 };
 
 function Init(feedType, feedPath, bgArr, senArr) {
-
+    
     function qSlt(selector) {
         return document.querySelector(selector);
     }
@@ -50,7 +50,7 @@ function Init(feedType, feedPath, bgArr, senArr) {
             qSlt(".article-content").innerHTML += '<p class="article-item"><a target="_blank" class="article-title" href="' + data[i].link + '">' + data[i].title + '</a><span class="article-time">' + data[i].timestamp + '</span></p>';
         }
     }
-
+/*
     var feed = new XMLHttpRequest();
     feed.open("GET", feedPath, true);
     feed.addEventListener("load", function () {
@@ -107,6 +107,7 @@ function Init(feedType, feedPath, bgArr, senArr) {
         setArtTip('<i class="fa fa-warning"></i><p class="article-empty-tip">暂时无法连接到博客</p>');
     });
     feed.send();
+*/
     var sBg = bgArr[Math.floor(Math.random() * bgArr.length)];
     qSlt(".background-layer").style.backgroundImage = "url(" + sBg.thumb + ")";
     var bgLoader = new Image();
@@ -150,7 +151,8 @@ function Init(feedType, feedPath, bgArr, senArr) {
             qSltAll(".switcher-btn").forEach(function (v) {
                 var id = v.id.substr(-1);
                 v.addEventListener("click", function () {
-                    qSlt(".content-container").setAttribute("data-selection",id);
+                    //qSlt(".content-container").setAttribute("data-selection",id);
+                    qSlt(".content-container").setAttribute("data-selection",1);
                 });
             });
         }, {once: true});
@@ -219,6 +221,56 @@ function Init(feedType, feedPath, bgArr, senArr) {
         selInd.style.transform = "";
         selInd.style.transition = "";
     });
+    
+    function hideContent(){
+        if(ContentsHidden){
+            hideContents.style.height = "400px";
+            ContentsHidden = 0;
+        } else {
+            hideContents.style.height = "64px";
+            ContentsHidden = 1;
+        }
+    }
+    
+    function reloadPic(){
+        var sBg = bgArr[Math.floor(Math.random() * bgArr.length)];
+        qSlt(".background-layer").style.backgroundImage = "url(" + sBg.url + ")";
+        var bgLoader = new Image();
+        bgLoader.src = sBg.url;
+    }
+    
+    function unlockBg(){
+        if(Zoom == 0){
+            bg.style.backgroundPositionY = "0%";
+            Zoom = 1;
+        } else if(Zoom == 1){
+            //bg.style.backgroundSize = "contain";
+            bg.style.backgroundPositionY = "100%";
+            Zoom = 2;
+        } else {
+            //bg.style.backgroundSize = "cover";
+            bg.style.backgroundPositionY = "50%";
+            Zoom = 0;
+        }
+    }
+    
+    hideContentBtn1.addEventListener("click", hideContent);
+    //hideContentBtn2.addEventListener("click", hideContent);
+    //hideContentBtn3.addEventListener("click", hideContent);
+    reloadPicBtn.addEventListener("click", reloadPic);
+    unlockBtn.addEventListener("click", unlockBg);
 }
+
+const hideContentBtn1 = document.getElementById("switcher-btn-1");
+//const hideContentBtn2 = document.getElementById("switcher-btn-2");
+//const hideContentBtn3 = document.getElementById("switcher-btn-3");
+const reloadPicBtn = document.getElementById("switcher-btn-2");
+const unlockBtn = document.getElementById("switcher-btn-3");
+const hideContents = document.getElementById("switcher");
+const bg = document.getElementById("background");
+
+var ContentsHidden = 0;
+var Zoom = 0;
+
 console.log("\n %c Present %c By Zapic \n\n", "color: #fff; background: #fb7299; padding:5px 0;", "background: #efefef; padding:5px 0;");
 console.log("\n %c Modified %c By OYasumiAyumu \n\n", "color: #fff; background: #80B0DB; padding:5px 0;", "background: #efefef; padding:5px 0;");

@@ -482,3 +482,16 @@ body.locked, .content-container, .self-wrapper, .article-title {
         align-items: start;
     }
 }
+
+#switcher {
+    transition-property: height;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+#background {
+    transition-property: background, filter, transform;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background-position-y: 50%;
+}
